@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe6f0">
+<title>Sorry Sneha 🥺💗</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 22px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #813b5b;
+  background: linear-gradient(135deg, #ffe1ed, #f5ddff, #fff0f5);
+  overflow-x: hidden;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  padding: 27px 20px;
+  text-align: center;
+  background: rgba(255,255,255,.94);
+  border: 2px solid white;
+  border-radius: 30px;
+  box-shadow: 0 15px 45px #bd65932c;
+  animation: appear .8s ease;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: clamp(29px, 8vw, 38px);
+  color: #ed4f8b;
+  margin: 12px 0;
+}
+
+h2 {
+  font-size: 21px;
+  margin: 17px 0 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 13px 0;
+}
+
+.paw {
+  font-size: 24px;
+  letter-spacing: 8px;
+}
+
+.cat-scene {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #fff1f7, #ffe0ec);
+}
+
+.cat {
+  font-size: 105px;
+  display: inline-block;
+  transform-origin: center bottom;
+  animation: catBounce 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 8px 5px #bb789533);
+}
+
+@keyframes catBounce {
+  0%, 100% { transform: translateY(4px) rotate(-4deg); }
+  50% { transform: translateY(-12px) rotate(4deg); }
+}
+
+.tear {
+  position: absolute;
+  font-size: 22px;
+  top: 93px;
+  left: calc(50% + 14px);
+  animation: tearDrop 1.5s infinite;
+}
+
+@keyframes tearDrop {
+  0%, 100% { transform: translateY(-3px); opacity: .2; }
+  50% { transform: translateY(7px); opacity: 1; }
+}
+
+.floating-heart {
+  position: absolute;
+  bottom: 0;
+  font-size: 23px;
+  animation: rise 3s linear forwards;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes rise {
+  to { transform: translateY(-230px) rotate(30deg); opacity: 0; }
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #ff6399, #df55bd);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 15px #e64e8733;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+  transform: scale(.97);
+}
+
+#surprise {
+  display: none;
+  margin-top: 18px;
+  padding: 17px;
+  background: #fff0f6;
+  border-radius: 20px;
+  animation: appear .5s ease;
+}
+
+.big-heart {
+  font-size: 48px;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.15); }
+}
+
+.footer {
+  font-size: 12px;
+  color: #b17a94;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<main class="card">
+
+  <div class="paw">🐾 💗 🐾</div>
+
+  <h1>I'm Sorry, Sneha! 🥺</h1>
+  <h2>Your friend is saying sorry 💌</h2>
+
+  <!-- Animated cat: works without an internet connection -->
+  <div class="cat-scene">
+    <span class="cat" role="img" aria-label="Cute sorry cat">😿</span>
+    <span class="tear">💧</span>
+  </div>
+
+  <p><b>Hey Sneha ❤️</b></p>
+
+  <p>
+    Please don't be upset with me. 🥺
+    If I hurt you or made you feel bad,
+    I'm genuinely sorry.
+  </p>
+
+  <p>
+    It was the first time, I denied u. Please forgive me for this, else I never deny u. 🫶
+  </p>
+
+  <p>
+    So here's a tiny crying cat asking you
+    for one little chance to make things right. 🐱🌷
+  </p>
+
+  <div class="big-heart">💗</div>
+
+  <h2>Will you forgive me? 🥹</h2>
+
+  <button onclick="showSurprise()">
+    Open your little surprise 🎁
+  </button>
+
+  <div id="surprise">
+    <div style="font-size:85px; animation:catBounce 1.5s infinite">
+      🥹🐱
+    </div>
+
+    <h2>I'm really sorry, Sneha! 💖</h2>
+
+    <p>
+      "Please forgive me!" 🌸🐾
+    </p>
+
+    <p>
+      I value our friendship, and I hope we can
+      talk, understand each other, and smile again. 🫂
+    </p>
+
+    <h2>Friends? 👉👈💕</h2>
+    <div style="font-size:38px">🐱💗🌷💗🐱</div>
+  </div>
+
+  <button onclick="sendLove()">
+    Send you a thousand hearts 💕
+  </button>
+
+  <div class="footer">
+    Made with love, for a special friend named Sneha 💗
+  </div>
+
+</main>
+
+<script>
+function showSurprise() {
+  const box = document.getElementById("surprise");
+  box.style.display = "block";
+  box.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  sendLove();
+}
+
+function sendLove() {
+  const symbols = ["💗", "💕", "💖", "🐾", "🌸", "🐱", "🫶"];
+
+  for (let i = 0; i < 24; i++) {
+    const item = document.createElement("span");
+    item.className = "floating-heart";
+    item.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    item.style.left = Math.random() * 100 + "vw";
+    item.style.animationDuration = (2 + Math.random() * 3) + "s";
+    document.body.appendChild(item);
+    setTimeout(() => item.remove(), 5500);
+  }
+}
+</script>
+
+</body>
+</html>
